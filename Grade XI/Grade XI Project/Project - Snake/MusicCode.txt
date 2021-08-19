@@ -1,0 +1,10 @@
+#include<Mmsystem.h>
+#include<mciapi.h>  // <already in windows.h>
+#pragma comment(lib,"Winmm.lib")
+
+//open:
+
+mciSendString("open \"*.mp3", NULL, 0, NULL);
+
+//play mp3 file:
+mciSendString("play .mp3", NULL, 0, NULL);
