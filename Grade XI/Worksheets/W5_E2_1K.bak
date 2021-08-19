@@ -1,0 +1,19 @@
+#include<iostream.h>
+#include<math.h>
+void main()
+{
+  int i,x,n,j,p,sign=1;
+  long int fact=1,sum=0;
+
+  cout<<"Enter x and n"<<endl;
+  cin>>x>>n;
+
+  for(i=2,j=1,p=1;j<=2*n;i=i+2,j++,p+=2)
+  {
+	fact=fact*i*(i-1);
+	sum=sum+(fact*sign*pow(x,p));
+	sign=-sign;
+	cout<<i<<"!"<<pow(x,p)<<"+";
+  }
+  cout<<"\b="<<sum<<endl;
+}
