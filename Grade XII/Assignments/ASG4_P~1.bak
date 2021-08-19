@@ -1,0 +1,21 @@
+/* Assignment 4 Program 1 */
+
+// Not Complete
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream.h>
+#include <fstream.h>
+
+class text
+{
+	private :
+
+		char str[64];
+
+	public :
+
+		void createFile();
+
+
+};
